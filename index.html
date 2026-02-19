@@ -1,13 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>HTML + CSS</title>
+    <title>Vagas Prof</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1>This is a simple HTML + CSS template!</h1>
+    <nav>
+      <nav id="menu">
+        <a href="#inicio">Inicio</a>
+        <a href="#inscricao">Inscrições</a>
+        <a href="#contatos">Contatos</a>
+        <a href="#rodape">Info Site</a>
+      </nav>
+        <h1>Venha fazer parte do corpo docente!</h1>
+      </ul>
+    </nav>
+  </header>
+  <section id="inicio">
+      
+      <img src="img/professor.png" alt="muita blza para carregar"
+      title="Venha "
+      width="200">
+      
+  </section>
+  <section id="inscricao">
+
+      <h2>Inscrições de Abertas</h2>
+
+      <form action="" method="POST">
+        <label id="nome" for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome" required><br>
+
+        <label id="email" for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+
+        <label id="idade" for="idade">Idade:</label><br>
+        <input type="idade" id="idade" name="idade" required><br>
+
+        <label id="escolaridade" for="escolaridade">SUA ESCOLARIDADE</label><br>
+          <select nome="categoria" required> 
+          <option id="none" value="none">...</option> 
+          <option id="ensinosuperiorcompleto" value="ensinosuperiorcompleto">Ensino Superior Completo</option>
+          <option id="cursandomestrado" value="cursandomestrado">Cursando Mestrado</option>
+          <option id="mestradocompleto" value="mestradocompleto">Mestrado Completo</option>
+          <option id="cursandodoutorado" value="cursandodoutorado">Cursando Doutorado</option>
+          <option id="doutoradocompleto" value="doutoradocompleto">Doutorado Completo</option>
+      </select><br>
+      <label id="materia" for="materia">MATÉRIA QUE DESEJA LECIONAR:</label><br>    
+            <select nome="categoria" required>   
+            <option id="none2" value="none2">...</option>    
+            <option id="artes" value="artes">Artes</option>
+            <option id="biologia" value="biologia">Biologia</option>
+            <option id="ciencias" value="ciencias">Ciências</option>
+            <option id="geografia" value="geografia">Geografia</option>
+            <option id="historia" value="historia">História</option>
+            <option id="matematica" value="matematica">Matemática</option>
+            <option id="portugues" value="portugues">Português</option>   
+        </select><br>        
+
+        <label for="sobre">Sobre Si:</label><br>
+        <textarea id="sobre" name="sobre" maxlength="200" cols="20" rows="5" required></textarea><br>
+        <a>Máximo de 200 caracteres permitidos.</a><br>
+        <input type="checkbox" id="inscricao" name="inscricao">
+        <label for="inscricao">Inscrever-se para novidades</label><br>
+        <input type="submit" value="Enviar Inscrição"> 
+        </form>
+      </article>
+  </section>
   </body>
 </html>
