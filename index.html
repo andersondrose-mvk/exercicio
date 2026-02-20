@@ -13,44 +13,57 @@
         <a href="#inicio">Inicio</a>
         <a href="#inscricao">Inscrições</a>
         <a href="#contatos">Contatos</a>
-        <a href="#rodape">Info Site</a>
+        
       </nav>
-        <h1>Venha fazer parte do corpo docente!</h1>
-      </ul>
-    </nav>
+       
   </header>
   <section id="inicio">
-      
+    <h1>Venha fazer parte do corpo docente!</h1><br>
       <img src="img/professor.png" alt="muita blza para carregar"
       title="Venha "
-      width="200">
+      width="200"><br>
+  
+      <h2>Inscrições de Abertas</h2>
       
-  </section>
+  </section><br>
   <section id="inscricao">
 
-      <h2>Inscrições de Abertas</h2>
+      <h2>Preencher Seu Formulário</h2>
 
       <form action="" method="POST">
-        <label id="nome" for="nome">Nome:</label><br>
+        <label for="nome">Nome: </label><br>
         <input type="text" id="nome" name="nome" required><br>
 
-        <label id="email" for="email">Email:</label><br>
+        <label for="email">E-mail: </label><br>
         <input type="email" id="email" name="email" required><br>
 
-        <label id="idade" for="idade">Idade:</label><br>
+        <label for="idade">Idade: </label><br>
         <input type="idade" id="idade" name="idade" required><br>
-
-        <label id="escolaridade" for="escolaridade">SUA ESCOLARIDADE</label><br>
-          <select nome="categoria" required> 
+    
+    <label for="turno">TURNOS DISPONÍVEIS:</label><br>    
+     
+      <input type="checkbox" id="turnoManha" name="turnomanha">
+        <label for="turnomanha">Turno da manhã</label><br>
+      
+      <input type="checkbox" id="turnoTarde" name="turnotarde">
+        <label for="turnotarde">Turno da tarde</label><br>
+      
+      <input type="checkbox" id="turnoNoite" name="turnonoite">
+        <label for="turnonoite">Turno da noite</label><br>
+    </select><br>  
+  
+      <label for="escolaridade">SUA ESCOLARIDADE</label><br>
+      <select nome="escolaridade" id="escolaridade" required> 
           <option id="none" value="none">...</option> 
-          <option id="ensinosuperiorcompleto" value="ensinosuperiorcompleto">Ensino Superior Completo</option>
-          <option id="cursandomestrado" value="cursandomestrado">Cursando Mestrado</option>
-          <option id="mestradocompleto" value="mestradocompleto">Mestrado Completo</option>
-          <option id="cursandodoutorado" value="cursandodoutorado">Cursando Doutorado</option>
-          <option id="doutoradocompleto" value="doutoradocompleto">Doutorado Completo</option>
-      </select><br>
-      <label id="materia" for="materia">MATÉRIA QUE DESEJA LECIONAR:</label><br>    
-            <select nome="categoria" required>   
+          <option id="ensinoSuperiorCompleto" value="ensinosuperiorcompleto">Ensino Superior Completo</option>
+          <option id="cursandoMestrado" value="cursandoMestrado">Cursando Mestrado</option>
+          <option id="mestradoCompleto" value="mestradocompleto">Mestrado Completo</option>
+          <option id="cursandoDoutorado" value="cursandodoutorado">Cursando Doutorado</option>
+          <option id="doutoradoCompleto" value="doutoradocompleto">Doutorado Completo</option>
+    </select><br>
+
+    <label  for="materia">MATÉRIA QUE DESEJA LECIONAR:</label><br>    
+    <select nome="materia" id="materia" required>   
             <option id="none2" value="none2">...</option>    
             <option id="artes" value="artes">Artes</option>
             <option id="biologia" value="biologia">Biologia</option>
@@ -59,15 +72,40 @@
             <option id="historia" value="historia">História</option>
             <option id="matematica" value="matematica">Matemática</option>
             <option id="portugues" value="portugues">Português</option>   
-        </select><br>        
-
+    </select><br>        
+    <section id="sobre">
         <label for="sobre">Sobre Si:</label><br>
-        <textarea id="sobre" name="sobre" maxlength="200" cols="20" rows="5" required></textarea><br>
-        <a>Máximo de 200 caracteres permitidos.</a><br>
+        <textarea  name="sobre" maxlength="200" cols="20" rows="5" required></textarea><br>
+        <a>Máximo de 200 caracteres permitidos.</a><br>   
         <input type="checkbox" id="inscricao" name="inscricao">
         <label for="inscricao">Inscrever-se para novidades</label><br>
         <input type="submit" value="Enviar Inscrição"> 
-        </form>
+    </section> 
+    </form>
+
+    <section id="contatos">
+          <h2>Contatos</h2>
+          
+          <img src="img/eu.png" alt="muita blza para carregar"
+          title="Imagem de perfil"
+          
+          width="150"><br>
+
+          <a>Anderson Dröse Martins</a>
+
+          <address>
+            E-mail:
+            <a href="maverickrsdrose@gmail.com">maverickrsdrose@gmail.com</a>
+            <br>
+            Telefone: <a href="Tel:+5551986445680">51 986445680</a><br>
+            <br>
+            <br>
+          </address>
+        </section>
+        <footer id="rodape">
+          Criado por Anderson Drose - MVKgames <br />
+          Direitos Reservado a Anderson Dröse Martins
+        </footer>
       </article>
   </section>
   </body>
