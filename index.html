@@ -11,14 +11,14 @@
           
   <header>
   <nav>
-    <nav id="menu">
+    <nav id="menu" class="menu">
       <a href="#inicio">Inicio</a>
       <a href="#inscricao">Inscrições</a>
       <a href="#contatos">Contatos</a>
     </nav>
   </header>
   <main>
-  <section id="inicio">
+    <section class="cabecalho">
     <h1>Venha fazer parte do corpo docente!</h1><br>
       <img 
       src="img/professor.png"
@@ -34,7 +34,8 @@
     <section id="inscricao">
 
       <h2>Preencha Seu Formulário</h2>
-
+<div class="container">
+  <div class="coluna-esquerda">
       <form action="" method="POST">
         <label for="nome">Nome: </label><br>
         <input type="text" id="nome" name="nome" required><br><br>
@@ -51,9 +52,9 @@
         max="100" 
         required
         /><br><br>
-    
+  
         <!--type number regua numerica. min / max limites-->
-
+  
         <fieldset>
           <legend>Turnos Disponíveis:</legend>
           <input type="checkbox" id="turnoManha" name="turnomanha" />
@@ -66,18 +67,20 @@
           <label for="turnoNoite">Turno da noite</label>
         </fieldset>
         <br>
+  </div>  
+        
         <!--fieldset elemto usado em bloco logico p/ organizar e estilizacao  -->
-
-
-      <label for="escolaridade">SUA ESCOLARIDADE</label><br>
-      <select nome="escolaridade" id="escolaridade" required> 
-          <option id="none" value="none">...</option> 
-          <option id="ensinoSuperiorCompleto" value="ensinosuperiorcompleto">Ensino Superior Completo</option>
-          <option id="cursandoMestrado" value="cursandoMestrado">Cursando Mestrado</option>
-          <option id="mestradoCompleto" value="mestradocompleto">Mestrado Completo</option>
-          <option id="cursandoDoutorado" value="cursandodoutorado">Cursando Doutorado</option>
-          <option id="doutoradoCompleto" value="doutoradocompleto">Doutorado Completo</option>
-    </select><br>
+  
+  <div class="content">   
+        <label for="escolaridade">SUA ESCOLARIDADE</label><br>
+        <select nome="escolaridade" id="escolaridade" required> 
+           <option id="none" value="none">...</option> 
+            <option id="ensinoSuperiorCompleto" value="ensinosuperiorcompleto">Ensino Superior Completo</option>
+            <option id="cursandoMestrado" value="cursandoMestrado">Cursando Mestrado</option>
+            <option id="mestradoCompleto" value="mestradocompleto">Mestrado Completo</option>
+            <option id="cursandoDoutorado" value="cursandodoutorado">Cursando Doutorado</option>
+            <option id="doutoradoCompleto" value="doutoradocompleto">Doutorado Completo</option>
+     </select><br>
 
     <label  for="materia">MATÉRIA QUE DESEJA LECIONAR:</label><br>    
     <select nome="materia" id="materia" required>   
@@ -110,8 +113,9 @@
         <input type="submit" value="Enviar Inscrição"> 
     </section> 
     </form>
-
-    <section id="contatos">
+  </div>
+  <div class="coluna-direita">
+     <section id="contatos" class="coluna-direita">
       <h2>Contatos</h2>
         <img
           src="img/eu.png"
@@ -128,9 +132,11 @@
             <br>
             <br>
           </address>
-    </section>
-  </main>
-        <footer id="rodape">
+      </section>
+  </div>
+</div>
+</main>
+        <footer id="rodape" class="rodape">
           <hr>
           <p>Criado por Anderson Dröse - MVKgames</p>
           <p>&copy; 2024 Direitos Reservados a Anderson Dröse Martins</p>
